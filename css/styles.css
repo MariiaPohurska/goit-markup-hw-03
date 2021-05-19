@@ -156,7 +156,6 @@ body {
   text-align: center;
 }
 .hero-title {
-  /* width: 696px; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -173,7 +172,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex; */
   align-items: center;
   letter-spacing: 0.06em;
   color: var(--text-on-dark-color);
@@ -266,12 +264,20 @@ body {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 120px) / 4);
+  background: var(--text-on-dark-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
   font-weight: 500;
   color: var(--title-color);
   margin-bottom: 10px;
+}
+
+.team-position {
+  padding-bottom: 30px;
 }
 /*======= END TEAM =======*/
 
@@ -308,16 +314,16 @@ body {
 /*======= END FOOTER =======*/
 
 /* ======= PORTFOLIO ======= */
+/* FILTER */
 .filter-list {
-  width: 611px;
   display: flex;
   align-items: center;
   margin-bottom: 34px;
+  justify-content: center;
 }
 .filter-list-item {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -330,6 +336,8 @@ body {
   border: transparent;
   cursor: pointer;
   padding: 6px 22px;
+  line-height: 1.62;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
 }
 
 .filter-btn:focus,
@@ -340,6 +348,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* PROJECT */
 .project-list {
   display: flex;
   flex-wrap: wrap;
